@@ -1,0 +1,7 @@
+﻿data/input/*
+data/leads/*
+!data/input/.gitkeep
+!data/leads/.gitkeep
+__pycache__/
+*.pyc
+.pytest_cache/

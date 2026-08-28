@@ -1,0 +1,40 @@
+version: "0.1"
+
+disclaimer: "Questo non dimostra alcun illecito. Indica solo una concentrazione che merita verifica."
+
+rules:
+  - id: REGOLA-001
+    name: "Concentrazione nominativi su enti diversi"
+    enabled: true
+    condition: "same_normalized_name appears in >= threshold distinct appointments on different entities"
+    threshold: 5
+    period: "same_calendar_year"
+    required_fields: ["person_name", "entity_id", "year"]
+    note: "Questo non dimostra alcun illecito. Indica solo una concentrazione che merita verifica."
+
+  - id: REGOLA-002
+    name: "Affidamenti diretti ripetuti dallo stesso ente"
+    enabled: true
+    condition: "same_awardee receives >= threshold direct awards from same entity"
+    threshold: 8
+    period: "12_months_rolling"
+    required_fields: ["awardee", "entity_id", "award_date", "procedure_type"]
+    note: "Questo non dimostra alcun illecito. Indica solo una concentrazione che merita verifica."
+
+  - id: REGOLA-003
+    name: "CIG/CUP collegati a più soggetti non spiegati"
+    enabled: true
+    condition: "same_cig_or_cup linked to >= threshold distinct subjects without explicit explanation in source"
+    threshold: 2
+    period: "full_dataset_coverage"
+    required_fields: ["cig_or_cup", "subject_id"]
+    note: "Questo non dimostra alcun illecito. Indica solo una concentrazione che merita verifica."
+
+  - id: REGOLA-004
+    name: "Percentuale elevata di affidamenti diretti"
+    enabled: false   # disabilitata finché non calibrata su dati reali
+    condition: "percentage of direct awards for an entity > threshold"
+    threshold: null  # da documentare esplicitamente prima di attivare
+    period: "calendar_year_or_12_months"
+    required_fields: ["entity_id", "procedure_type", "amount"]
+    note: "Questo non dimostra alcun illecito. Indica solo una concentrazione che merita verifica."
