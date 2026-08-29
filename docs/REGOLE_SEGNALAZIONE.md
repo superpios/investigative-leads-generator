@@ -31,14 +31,16 @@ Queste regole implementano in modo dichiarativo e riproducibile i principi di se
 ### REGOLA-002 – Affidamenti diretti ripetuti dallo stesso ente
 - **Condizione**: Stesso aggiudicatario riceve ≥ 8 affidamenti diretti dallo stesso ente.
 - **Soglia**: ≥ 8
-- **Periodo di osservazione**: 12 mesi mobili
+- **Periodo di osservazione**: 12 mesi mobili (finestra calcolata rispetto alla data massima presente nei dati; deterministico: stesso input → stesso output).
 - **Fonte dati**: tabelle di relazione relative ad affidamenti diretti
 - **Nota obbligatoria**: «Questo non dimostra alcun illecito. Indica solo una concentrazione che merita verifica.»
 
-### REGOLA-003 – CIG/CUP collegati a più soggetti in modo non spiegato dalla fonte
-- **Condizione**: Stesso CIG o stesso CUP appare collegato a più soggetti e la fonte non fornisce spiegazione esplicita del collegamento multiplo.
-- **Soglia**: ≥ 2 soggetti distinti non giustificati
+### REGOLA-003 – CIG collegato a più enti in modo non spiegato dalla fonte
+- **Condizione**: Stesso CIG appare collegato a più **enti** distinti e la fonte non fornisce spiegazione esplicita del collegamento multiplo.
+- **Soglia**: ≥ 2 enti distinti non giustificati
 - **Periodo di osservazione**: intero periodo coperto dal dataset
+- **Spiegazione**: il motore legge il campo `explanation` (da `note_source` dell'Explorer); se la fonte spiega il collegamento, la pista non viene emessa.
+- **Nota sui dati**: la relazione disponibile nell'Explorer è CIG → ente (`cig_ente`). Un CIG → aggiudicatario richiederebbe un join con le tabelle degli affidamenti (non presente nei dataset correnti: gli affidamenti non portano il CIG); resta quindi fuori perimetro della v0.1.
 - **Nota obbligatoria**: «Questo non dimostra alcun illecito. Indica solo una concentrazione che merita verifica.»
 
 ### REGOLA-004 – Percentuale elevata di affidamenti diretti su un singolo ente

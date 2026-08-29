@@ -17,20 +17,20 @@ def test_adapt_persona():
                 "period": "2025-03-01",
                 "source_dataset": "ds",
                 "source_record_id": "r1",
+                "fonte_url": "http://s/r1",
+                "acquisition_date": "2025-01-01",
             }
         ]
     )
     out = adapt_explorer.adapt_persona(df)
-    assert list(out.columns) == [
-        "person_name",
-        "entity_id",
-        "year",
-        "source_dataset",
-        "source_record_id",
-    ]
+    for col in ["person_name", "entity_id", "year", "source_dataset", "source_record_id",
+                "source_url", "acquisition_date"]:
+        assert col in out.columns
     assert out.iloc[0]["person_name"] == "MARIO ROSSI"
     assert out.iloc[0]["entity_id"] == "COMUNE X"
     assert out.iloc[0]["year"] == "2025"
+    assert out.iloc[0]["source_url"] == "http://s/r1"
+    assert out.iloc[0]["acquisition_date"] == "2025-01-01"
 
 
 def test_adapt_awards():
@@ -42,6 +42,8 @@ def test_adapt_awards():
                 "period": "2024-05-01",
                 "source_dataset": "ds",
                 "source_record_id": "r2",
+                "fonte_url": "http://s/r2",
+                "acquisition_date": "2025-01-01",
             }
         ]
     )
@@ -50,6 +52,8 @@ def test_adapt_awards():
     assert out.iloc[0]["entity_id"] == "ENT"
     assert out.iloc[0]["award_date"] == "2024-05-01"
     assert out.iloc[0]["procedure_type"] == "affidamento diretto"
+    assert out.iloc[0]["source_url"] == "http://s/r2"
+    assert out.iloc[0]["acquisition_date"] == "2025-01-01"
 
 
 def test_adapt_cig():
@@ -60,9 +64,15 @@ def test_adapt_cig():
                 "object_key": "ENT",
                 "source_dataset": "ds",
                 "source_record_id": "r3",
+                "fonte_url": "http://s/r3",
+                "acquisition_date": "2025-01-01",
+                "note_source": "spiegazione di test",
             }
         ]
     )
     out = adapt_explorer.adapt_cig(df)
     assert out.iloc[0]["cig"] == "CIG1"
     assert out.iloc[0]["subject_id"] == "ENT"
+    assert out.iloc[0]["source_url"] == "http://s/r3"
+    assert out.iloc[0]["acquisition_date"] == "2025-01-01"
+    assert out.iloc[0]["explanation"] == "spiegazione di test"

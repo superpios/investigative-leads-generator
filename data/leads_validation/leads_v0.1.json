@@ -1,0 +1,691 @@
+[
+  {
+    "id": "LEAD-REGOLA-001-4447ec1b2d",
+    "title": "Nominativo presente in 3 incarichi su enti diversi – anno 2025",
+    "observed_facts": [
+      "Nominativo normalizzato: ARUBA SPA",
+      "Numero di enti distinti: 3",
+      "Anno solare: 2025",
+      "Soglia della regola: >= 3"
+    ],
+    "sources": [
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "eff4fa57b5a2a3218cda88fc87908ead256f21eaeaede632693ed0785fc7fd5f",
+        "source_url": "https://www.parcocirceo.it/amm_aperta_appalti.php?num_elenco=1625&page=7",
+        "entity_id": "epnc_lt"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "59db4e330e4f19a25d4b51130905b0be24f333ac7b853ae686992b94b064cead",
+        "source_url": "https://giuntastorica.it/bandi-di-gara-e-contratti/__trashed/",
+        "entity_id": "gcss"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "469b2c9593a6c40f2cd6510535b19ae516c9e1703941c01f372304501c6aa814",
+        "source_url": "https://www.risorgimento.it/wp-content/uploads/2026/06/TABELLA-RIASSUNTIVA-ANNO-2025.xlsx",
+        "entity_id": "ilsri"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "dff7171226f3f3a3e48f43fd19ebb3ae57c9b0a75f0c12014c43dbf0895cfdcb",
+        "source_url": "https://www.risorgimento.it/wp-content/uploads/2026/06/TABELLA-RIASSUNTIVA-ANNO-2025.xlsx",
+        "entity_id": "ilsri"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "5544582ed4e1e9b7fedefcb9e8e5b5ee7d62c835f2b29dc08fde77db8c37d3e4",
+        "source_url": "https://www.risorgimento.it/wp-content/uploads/2026/06/TABELLA-RIASSUNTIVA-ANNO-2025.xlsx",
+        "entity_id": "ilsri"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "8d7f477a288fd13a92129fdb0fd2bb06c0c0dd67903cddfc961ef0c7ceb48aad",
+        "source_url": "https://www.risorgimento.it/wp-content/uploads/2026/06/TABELLA-RIASSUNTIVA-ANNO-2025.xlsx",
+        "entity_id": "ilsri"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "0f736ba34386c3cb8efdca3c13123bc33f87ea5ccfb673222f5c55122d4cd6fa",
+        "source_url": "https://www.risorgimento.it/wp-content/uploads/2026/06/TABELLA-RIASSUNTIVA-ANNO-2025.xlsx",
+        "entity_id": "ilsri"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "f8370818532026e31e19e2174579625d1ed32a9cf31a234e7d205df1d46b265c",
+        "source_url": "https://www.risorgimento.it/wp-content/uploads/2026/06/TABELLA-RIASSUNTIVA-ANNO-2025.xlsx",
+        "entity_id": "ilsri"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "be418af8d164560772b999353449e4069388a156d537565d231f19632db46c8a",
+        "source_url": "https://www.risorgimento.it/wp-content/uploads/2026/06/TABELLA-RIASSUNTIVA-ANNO-2025.xlsx",
+        "entity_id": "ilsri"
+      }
+    ],
+    "period": "2025",
+    "rule_id": "REGOLA-001",
+    "why_worth_checking": "Concentrazione di 3 incarichi su enti diversi nello stesso anno solare (soglia >= 3).",
+    "what_cannot_be_claimed": [
+      "Nessuna responsabilità individuale",
+      "Nessun illecito, frode, corruzione o spreco",
+      "Nessuna risoluzione di omonimie",
+      "Nessun confronto tra perimetri contabili diversi"
+    ],
+    "disclaimer": "Questo non dimostra alcun illecito. Indica solo una concentrazione che merita verifica.",
+    "data_through": "2026-08-12",
+    "snapshot_created_at": "2026-08-25",
+    "explorer_sha": "044fda787f3c6897830c2d3b0629cbbada81980342ec9328b225d00aef150ef0"
+  },
+  {
+    "id": "LEAD-REGOLA-001-49a17b8901",
+    "title": "Nominativo presente in 4 incarichi su enti diversi – anno 2025",
+    "observed_facts": [
+      "Nominativo normalizzato: MARINO FRANCESCO",
+      "Numero di enti distinti: 4",
+      "Anno solare: 2025",
+      "Soglia della regola: >= 3"
+    ],
+    "sources": [
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "a2f9f16a6520f198533f528b8b411236c299e42457d4171dddecfd18c3341062",
+        "source_url": "https://consulentipubblici.dfp.gov.it/?ente=DFP00012765&tipologiasoggetto=CCE&anno=2025",
+        "entity_id": "inps"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "bc0af7d9f9b41e677d7da531c56cb791762288dfe4660b16096957d2ba0d3250",
+        "source_url": "https://www.cnr.it/it/trasparenza/incarichi-dipendenti/pdf/anno/2025/cnr-incarichi-conferiti-e-autorizzati-ai-dipendenti-anno-2025.pdf",
+        "entity_id": "cnr"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "3b3e06fdfebfac40760aef3997d5b1ba1e6123946bce5a6932ae087760742e63",
+        "source_url": "https://www.cnr.it/it/trasparenza/incarichi-dipendenti/pdf/anno/2025/cnr-incarichi-conferiti-e-autorizzati-ai-dipendenti-anno-2025.pdf",
+        "entity_id": "cnr"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "3978af4f399d8bf0ad540f752fe2ac50958497ac6c72d64bd257e73283af04a3",
+        "source_url": "https://www.cnr.it/it/trasparenza/incarichi-dipendenti/pdf/anno/2025/cnr-incarichi-conferiti-e-autorizzati-ai-dipendenti-anno-2025.pdf",
+        "entity_id": "cnr"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "88ab33cf2da0b6b9ac0e56527835302e1f4c3da3f2227be931e3facfb8f533b5",
+        "source_url": "https://www.cnr.it/it/trasparenza/incarichi-dipendenti/pdf/anno/2025/cnr-incarichi-conferiti-e-autorizzati-ai-dipendenti-anno-2025.pdf",
+        "entity_id": "cnr"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "6011335a1a2a004265a9b6a29dd1d42af706a9acc27ff5bc5eb09cb9be9caad1",
+        "source_url": "https://www.indire.it/wp-content/uploads/2026/05/Elenco-incarichi-di-prestazione-dopera_aprile-2026-3.xlsx",
+        "entity_id": "indire"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "94dadaaca30da0fe35d1077987b99f3b834ef03bb2fc7402f8d3a673fdefbcf9",
+        "source_url": "https://www.indire.it/wp-content/uploads/2026/05/Elenco-incarichi-di-prestazione-dopera_aprile-2026-3-1-1.xlsx",
+        "entity_id": "indire"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "789c5da75bce5a180e60112088808d4df9b9aeeb3ee05dfff683331eaec4bcb4",
+        "source_url": "https://www.iss.it/documents/20126/9028926/2025_2_13_incarichi_dipendenti_DFP00013055+(1).csv",
+        "entity_id": "iss_rm"
+      }
+    ],
+    "period": "2025",
+    "rule_id": "REGOLA-001",
+    "why_worth_checking": "Concentrazione di 4 incarichi su enti diversi nello stesso anno solare (soglia >= 3).",
+    "what_cannot_be_claimed": [
+      "Nessuna responsabilità individuale",
+      "Nessun illecito, frode, corruzione o spreco",
+      "Nessuna risoluzione di omonimie",
+      "Nessun confronto tra perimetri contabili diversi"
+    ],
+    "disclaimer": "Questo non dimostra alcun illecito. Indica solo una concentrazione che merita verifica.",
+    "data_through": "2026-08-12",
+    "snapshot_created_at": "2026-08-25",
+    "explorer_sha": "044fda787f3c6897830c2d3b0629cbbada81980342ec9328b225d00aef150ef0"
+  },
+  {
+    "id": "LEAD-REGOLA-001-64dce4e2e7",
+    "title": "Nominativo presente in 3 incarichi su enti diversi – anno 2025",
+    "observed_facts": [
+      "Nominativo normalizzato: ERREBIAN SPA",
+      "Numero di enti distinti: 3",
+      "Anno solare: 2025",
+      "Soglia della regola: >= 3"
+    ],
+    "sources": [
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "23c00e1eaf3040a70c0acd557dcddaf5ea54007cfe218ae1eadbac158a3ba6e5",
+        "source_url": "https://www.parcocirceo.it/amm_aperta_appalti.php?num_elenco=1625&page=4",
+        "entity_id": "epnc_lt"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "222862bf81de6e06bb400194bcfc2b234dec55e0ff13b1e7d2e667c706c298e5",
+        "source_url": "https://giuntastorica.it/bandi-di-gara-e-contratti/__trashed/",
+        "entity_id": "gcss"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "a8cdb826ade2a1e1e75c4ec598abc11eef4d6de7af8dac1291cc74c259a525c3",
+        "source_url": "https://www.storiaantica.eu/contratti-2025/",
+        "entity_id": "iipsa"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "1f45c9b840affde73188442ee4c0583d1514d56047fcd37e7911d27a25f1c7b3",
+        "source_url": "https://www.storiaantica.eu/contratti-2025/",
+        "entity_id": "iipsa"
+      },
+      {
+        "source_dataset": "incarichi-nominativi-shard",
+        "source_record_id": "07a154a727755b2b8876c80b1b1478fe60ac0d2957ec68b54b3a9493f16fc26f",
+        "source_url": "https://www.storiaantica.eu/contratti-2025/",
+        "entity_id": "iipsa"
+      }
+    ],
+    "period": "2025",
+    "rule_id": "REGOLA-001",
+    "why_worth_checking": "Concentrazione di 3 incarichi su enti diversi nello stesso anno solare (soglia >= 3).",
+    "what_cannot_be_claimed": [
+      "Nessuna responsabilità individuale",
+      "Nessun illecito, frode, corruzione o spreco",
+      "Nessuna risoluzione di omonimie",
+      "Nessun confronto tra perimetri contabili diversi"
+    ],
+    "disclaimer": "Questo non dimostra alcun illecito. Indica solo una concentrazione che merita verifica.",
+    "data_through": "2026-08-12",
+    "snapshot_created_at": "2026-08-25",
+    "explorer_sha": "044fda787f3c6897830c2d3b0629cbbada81980342ec9328b225d00aef150ef0"
+  },
+  {
+    "id": "LEAD-REGOLA-002-0b6fa0d587",
+    "title": "Aggiudicatario riceve 6 affidamenti diretti dallo stesso ente – 12 mesi mobili (fino al 2026-08-12)",
+    "observed_facts": [
+      "Aggiudicatario: SCUOTTO IMPIANTI ELETTRICI E TECNOLOGICI S.R.L.",
+      "Ente: m_bac",
+      "Numero di affidamenti diretti: 6",
+      "Finestra di osservazione: 12 mesi mobili fino al 2026-08-12",
+      "Soglia della regola: >= 4"
+    ],
+    "sources": [
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "274615407710ed8cdbc8245a678d2b7155bb0e9183258f5d3dab2e2d16f70f30",
+        "source_url": "",
+        "award_date": "2025-10-07"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "e2cfc2f257dab3fad7cca0dd819ad2aee2ec7bec10cdd1770a390ec906e34171",
+        "source_url": "",
+        "award_date": "2025-10-28"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "6b47f0eff4899cee3c92d15320b1d5fc29c9a2fa86c605dce53c5fbe5bd61dcd",
+        "source_url": "",
+        "award_date": "2025-11-06"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "981e832aadf32751cf632b963c1f464bd68b163bb65924d3759fc0a364b8fed7",
+        "source_url": "",
+        "award_date": "2025-11-06"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "2e89db07a02be8e98ba583846bb0402e5cd0cc174c5f6ea2d5afb290d740cc4a",
+        "source_url": "",
+        "award_date": "2025-12-09"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "a744a3aacd2a86d2548fcb5015e94b8b6c791f5fa1c45b8f3bfc78df3ce54ca5",
+        "source_url": "",
+        "award_date": "2025-12-11"
+      }
+    ],
+    "period": "2025-08-12..2026-08-12",
+    "rule_id": "REGOLA-002",
+    "why_worth_checking": "Lo stesso aggiudicatario riceve 6 affidamenti diretti dallo stesso ente nei 12 mesi mobili fino al 2026-08-12 (soglia >= 4).",
+    "what_cannot_be_claimed": [
+      "Nessuna responsabilità individuale",
+      "Nessun illecito, frode, corruzione o spreco",
+      "Nessuna risoluzione di omonimie",
+      "Nessun confronto tra perimetri contabili diversi"
+    ],
+    "disclaimer": "Questo non dimostra alcun illecito. Indica solo una concentrazione che merita verifica.",
+    "data_through": "2026-08-12",
+    "snapshot_created_at": "2026-08-25",
+    "explorer_sha": "044fda787f3c6897830c2d3b0629cbbada81980342ec9328b225d00aef150ef0"
+  },
+  {
+    "id": "LEAD-REGOLA-002-4458183d69",
+    "title": "Aggiudicatario riceve 12 affidamenti diretti dallo stesso ente – 12 mesi mobili (fino al 2026-08-12)",
+    "observed_facts": [
+      "Aggiudicatario: INFRASTRUTTURE MILANO CORTINA 2020-2026 S.P.A.",
+      "Ente: m_inf",
+      "Numero di affidamenti diretti: 12",
+      "Finestra di osservazione: 12 mesi mobili fino al 2026-08-12",
+      "Soglia della regola: >= 4"
+    ],
+    "sources": [
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "dcb3f8973409c37b7298bcdd337590fce0365aa90c61f9417ae91d7519924f62",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "5e739d3d195a555025502bbeeaa71efb48140d8c068da84bddcff4b31f598330",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "63b010ee6210c13e27ee0f43dba00cf5caa4258d2c5c7cf4e1d1cdbfd24c188d",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "5a70fc0e15aa49c3ca9a0d94758461b93eea5d424ae2cbb27e7fb732af30d641",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "4d6b571562900e1e3e56de745120d599279d987d23268943c2bb9e4ef5f470da",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "4d478f397d71f13dc928a58b6068eedfb3c7f0f6f02bcbee9b6fc7207f32ced4",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "eaf7e042f0dfc21728c48f8ed3ee7bcf2c6ccde4e52e3b8414deceeebda22280",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "5d6dad5ba40763dfc40fae9873430894382ddaef39c511b238a119c47c001faf",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "2203e3c7f0d273438a173ee791d473ea8a72133343c95503160cf32ab3381627",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "1ed9f36378cf911660c2cfb1ad3a08245a6df602490ac20ff11db8eae81a23ff",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "5a7ac9434944d66adc4932258394c95f383e0c822b9b045567786ddb66fe0b62",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "e4bf592ea922b01aa5e3a732cdcb6b1631d255adc73e7caf8ec691a3d45066dd",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      }
+    ],
+    "period": "2025-08-12..2026-08-12",
+    "rule_id": "REGOLA-002",
+    "why_worth_checking": "Lo stesso aggiudicatario riceve 12 affidamenti diretti dallo stesso ente nei 12 mesi mobili fino al 2026-08-12 (soglia >= 4).",
+    "what_cannot_be_claimed": [
+      "Nessuna responsabilità individuale",
+      "Nessun illecito, frode, corruzione o spreco",
+      "Nessuna risoluzione di omonimie",
+      "Nessun confronto tra perimetri contabili diversi"
+    ],
+    "disclaimer": "Questo non dimostra alcun illecito. Indica solo una concentrazione che merita verifica.",
+    "data_through": "2026-08-12",
+    "snapshot_created_at": "2026-08-25",
+    "explorer_sha": "044fda787f3c6897830c2d3b0629cbbada81980342ec9328b225d00aef150ef0"
+  },
+  {
+    "id": "LEAD-REGOLA-002-591866d9e6",
+    "title": "Aggiudicatario riceve 5 affidamenti diretti dallo stesso ente – 12 mesi mobili (fino al 2026-08-12)",
+    "observed_facts": [
+      "Aggiudicatario: A.I.R. TECH S.R.L",
+      "Ente: m_bac",
+      "Numero di affidamenti diretti: 5",
+      "Finestra di osservazione: 12 mesi mobili fino al 2026-08-12",
+      "Soglia della regola: >= 4"
+    ],
+    "sources": [
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "fcfb40b182789310cbf8d366d50ddf1be242a69ba1300fc483ac489118e41731",
+        "source_url": "",
+        "award_date": "2025-12-16"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "2649787911f8ef8b4a1d20f17ac3783c6a20ec5d9dfe53511674d20fcff4493c",
+        "source_url": "",
+        "award_date": "2025-12-18"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "5ec5b07cc46601383e7c3f2294a515b9fe30e155b96cfb90aa1b4bd68efd9cb8",
+        "source_url": "",
+        "award_date": "2026-05-15"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "bfd68f26135fe253ed06fe6cef9e1486d5c5190a45f0a492914294067ba5a761",
+        "source_url": "",
+        "award_date": "2026-06-19"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "e5d6e046a264291324ddf4ef4c1663874aca6b84c99879b249da19d7e2721214",
+        "source_url": "",
+        "award_date": "2026-06-19"
+      }
+    ],
+    "period": "2025-08-12..2026-08-12",
+    "rule_id": "REGOLA-002",
+    "why_worth_checking": "Lo stesso aggiudicatario riceve 5 affidamenti diretti dallo stesso ente nei 12 mesi mobili fino al 2026-08-12 (soglia >= 4).",
+    "what_cannot_be_claimed": [
+      "Nessuna responsabilità individuale",
+      "Nessun illecito, frode, corruzione o spreco",
+      "Nessuna risoluzione di omonimie",
+      "Nessun confronto tra perimetri contabili diversi"
+    ],
+    "disclaimer": "Questo non dimostra alcun illecito. Indica solo una concentrazione che merita verifica.",
+    "data_through": "2026-08-12",
+    "snapshot_created_at": "2026-08-25",
+    "explorer_sha": "044fda787f3c6897830c2d3b0629cbbada81980342ec9328b225d00aef150ef0"
+  },
+  {
+    "id": "LEAD-REGOLA-002-5ecb2e0a7f",
+    "title": "Aggiudicatario riceve 4 affidamenti diretti dallo stesso ente – 12 mesi mobili (fino al 2026-08-12)",
+    "observed_facts": [
+      "Aggiudicatario: SISTEMA AZIENDA SRL",
+      "Ente: m_bac",
+      "Numero di affidamenti diretti: 4",
+      "Finestra di osservazione: 12 mesi mobili fino al 2026-08-12",
+      "Soglia della regola: >= 4"
+    ],
+    "sources": [
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "4e5ae664a2602ef0546990d7f4099cb84b72cb9f8c1c4df8af475dd72eb9fc1b",
+        "source_url": "",
+        "award_date": "2025-12-11"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "90c56d7ca6640181dd872fdcfdd684444a1ae91fbfa927e65f61aef4813d1564",
+        "source_url": "",
+        "award_date": "2025-12-11"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "7e98eec518a996266dd4bc8b7e0f9884bf78d1cd0ea0ff7151ee56b68d436767",
+        "source_url": "",
+        "award_date": "2026-04-24"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "1a35c3ffdb37e94a9d7844695d5f36998fd604b4efa9efc391c0cf9d3ea8ab34",
+        "source_url": "",
+        "award_date": "2026-06-01"
+      }
+    ],
+    "period": "2025-08-12..2026-08-12",
+    "rule_id": "REGOLA-002",
+    "why_worth_checking": "Lo stesso aggiudicatario riceve 4 affidamenti diretti dallo stesso ente nei 12 mesi mobili fino al 2026-08-12 (soglia >= 4).",
+    "what_cannot_be_claimed": [
+      "Nessuna responsabilità individuale",
+      "Nessun illecito, frode, corruzione o spreco",
+      "Nessuna risoluzione di omonimie",
+      "Nessun confronto tra perimetri contabili diversi"
+    ],
+    "disclaimer": "Questo non dimostra alcun illecito. Indica solo una concentrazione che merita verifica.",
+    "data_through": "2026-08-12",
+    "snapshot_created_at": "2026-08-25",
+    "explorer_sha": "044fda787f3c6897830c2d3b0629cbbada81980342ec9328b225d00aef150ef0"
+  },
+  {
+    "id": "LEAD-REGOLA-002-7b8f11a106",
+    "title": "Aggiudicatario riceve 4 affidamenti diretti dallo stesso ente – 12 mesi mobili (fino al 2026-08-12)",
+    "observed_facts": [
+      "Aggiudicatario: ZINNI GROUP S.R.L.S",
+      "Ente: m_bac",
+      "Numero di affidamenti diretti: 4",
+      "Finestra di osservazione: 12 mesi mobili fino al 2026-08-12",
+      "Soglia della regola: >= 4"
+    ],
+    "sources": [
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "167ea627666938c5b7d5682abec1bf608f597f1b466c0adc2f6342cdaa3c5b6b",
+        "source_url": "",
+        "award_date": "2025-09-17"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "bd12c784c542de2493af016ae1d8eb000608aa61f6ad8247f6d11cec00c5a2ed",
+        "source_url": "",
+        "award_date": "2025-12-11"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "2e94f11fb08e77c5603401af9e2457493baa71fc098a00c6cfa4500b40a174cf",
+        "source_url": "",
+        "award_date": "2026-04-10"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "f2fad6dbc37377e069f1bc99f7993e807f230a5c4ddde2dd2c31d6e4953d990b",
+        "source_url": "",
+        "award_date": "2026-07-16"
+      }
+    ],
+    "period": "2025-08-12..2026-08-12",
+    "rule_id": "REGOLA-002",
+    "why_worth_checking": "Lo stesso aggiudicatario riceve 4 affidamenti diretti dallo stesso ente nei 12 mesi mobili fino al 2026-08-12 (soglia >= 4).",
+    "what_cannot_be_claimed": [
+      "Nessuna responsabilità individuale",
+      "Nessun illecito, frode, corruzione o spreco",
+      "Nessuna risoluzione di omonimie",
+      "Nessun confronto tra perimetri contabili diversi"
+    ],
+    "disclaimer": "Questo non dimostra alcun illecito. Indica solo una concentrazione che merita verifica.",
+    "data_through": "2026-08-12",
+    "snapshot_created_at": "2026-08-25",
+    "explorer_sha": "044fda787f3c6897830c2d3b0629cbbada81980342ec9328b225d00aef150ef0"
+  },
+  {
+    "id": "LEAD-REGOLA-002-d38732c5f5",
+    "title": "Aggiudicatario riceve 10 affidamenti diretti dallo stesso ente – 12 mesi mobili (fino al 2026-08-12)",
+    "observed_facts": [
+      "Aggiudicatario: DOTT.SSA RAFFAELLA CUGINI",
+      "Ente: aifa_rm",
+      "Numero di affidamenti diretti: 10",
+      "Finestra di osservazione: 12 mesi mobili fino al 2026-08-12",
+      "Soglia della regola: >= 4"
+    ],
+    "sources": [
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "1e5d235d36a4ac0a53523011889362420f3b848b9acc2c22ac675b6632de3b24",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "bb3f4d9b3a3ceca200eba713c9e43ac71590510f9edcce8bc87421489c06aa10",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "011e25b38fa233e53ff7b708d18a2840bd56317cc376e681b47778876ddb831d",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "07d84b219b0102370d837d2aea8b813b8f375d72ec90a6221fd7e160cd9cf406",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "9a8f254db8906b36340a18166b085c20c0e346fa8549b44971c6eecec7e688a0",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "37ee648a034343e01abe42b9159a75913084c9d55da16231ddb1ed391698e304",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "29667ea4bf03598cb178c8171db505ecc70784d4c2a464245d77ea7282ab86bd",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "486a624495274a0a3ee34d06913049ff26ce265f728a9eccc2b46d3c1ad12721",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "c5901fc085c07a975d275fad85af31ba4ab29ce2f45e48b09dd5a788932f6437",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "c2941ab248b0789576fc37058b5d51f877f26f1f3d621c79f7c84695f86a9050",
+        "source_url": "",
+        "award_date": "2026-01-01"
+      }
+    ],
+    "period": "2025-08-12..2026-08-12",
+    "rule_id": "REGOLA-002",
+    "why_worth_checking": "Lo stesso aggiudicatario riceve 10 affidamenti diretti dallo stesso ente nei 12 mesi mobili fino al 2026-08-12 (soglia >= 4).",
+    "what_cannot_be_claimed": [
+      "Nessuna responsabilità individuale",
+      "Nessun illecito, frode, corruzione o spreco",
+      "Nessuna risoluzione di omonimie",
+      "Nessun confronto tra perimetri contabili diversi"
+    ],
+    "disclaimer": "Questo non dimostra alcun illecito. Indica solo una concentrazione che merita verifica.",
+    "data_through": "2026-08-12",
+    "snapshot_created_at": "2026-08-25",
+    "explorer_sha": "044fda787f3c6897830c2d3b0629cbbada81980342ec9328b225d00aef150ef0"
+  },
+  {
+    "id": "LEAD-REGOLA-002-fe86830e40",
+    "title": "Aggiudicatario riceve 9 affidamenti diretti dallo stesso ente – 12 mesi mobili (fino al 2026-08-12)",
+    "observed_facts": [
+      "Aggiudicatario: ING. GIOVANNI MALESCI",
+      "Ente: m_dg",
+      "Numero di affidamenti diretti: 9",
+      "Finestra di osservazione: 12 mesi mobili fino al 2026-08-12",
+      "Soglia della regola: >= 4"
+    ],
+    "sources": [
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "f91e73bcd04d044d815ad2bd43fd23a6d036c69f928aef7daa43a9734c110016",
+        "source_url": "",
+        "award_date": "2025-11-13"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "b3040e3e0f79876f26665f3c4a2d4e6bfd3c0cda390cfa4107a20632becb0144",
+        "source_url": "",
+        "award_date": "2025-11-13"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "f40b52540110d38df6d795c69825fad15f62acb63c3701a68aae70a8f30e8c0d",
+        "source_url": "",
+        "award_date": "2025-11-14"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "2da14ddfdd74b17577b2026e20d59c2d9f99c59ca824d47ecffd4e324fa50d79",
+        "source_url": "",
+        "award_date": "2026-04-27"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "a24897c01395df3a55181f8053e2abf6ab663847660fc769a72d7f6339aff221",
+        "source_url": "",
+        "award_date": "2026-04-27"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "aa0ff63d2ff462b757c9432a62b314fac16158bfd178abcc08aef158ffdf72cb",
+        "source_url": "",
+        "award_date": "2026-05-08"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "59abda176d88a5e02a76b6bae6e8b80421b6c7ba7e2a8b4571fc20948123fed0",
+        "source_url": "",
+        "award_date": "2026-06-09"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "e09f75c8c4b4288dfa8b7c7f3c3dc7fb89e74a8fad41313a911ed3d3e7e2e6ba",
+        "source_url": "",
+        "award_date": "2026-07-01"
+      },
+      {
+        "source_dataset": "affidamenti-diretti",
+        "source_record_id": "750d74a32485e42137e06ff8ee4b1da922a6d47246a736899d856493e6701911",
+        "source_url": "",
+        "award_date": "2026-07-01"
+      }
+    ],
+    "period": "2025-08-12..2026-08-12",
+    "rule_id": "REGOLA-002",
+    "why_worth_checking": "Lo stesso aggiudicatario riceve 9 affidamenti diretti dallo stesso ente nei 12 mesi mobili fino al 2026-08-12 (soglia >= 4).",
+    "what_cannot_be_claimed": [
+      "Nessuna responsabilità individuale",
+      "Nessun illecito, frode, corruzione o spreco",
+      "Nessuna risoluzione di omonimie",
+      "Nessun confronto tra perimetri contabili diversi"
+    ],
+    "disclaimer": "Questo non dimostra alcun illecito. Indica solo una concentrazione che merita verifica.",
+    "data_through": "2026-08-12",
+    "snapshot_created_at": "2026-08-25",
+    "explorer_sha": "044fda787f3c6897830c2d3b0629cbbada81980342ec9328b225d00aef150ef0"
+  }
+]

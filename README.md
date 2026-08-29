@@ -68,21 +68,25 @@ In `data/leads/`:
 
 Ogni pista contiene **sempre** tutti i campi di `docs/FORMATO_PISTA.md`
 (`id`, `title`, `observed_facts`, `sources`, `period`, `rule_id`,
-`why_worth_checking`, `what_cannot_be_claimed`, `generation_date`, `disclaimer`).
+`why_worth_checking`, `what_cannot_be_claimed`, `data_through`, `snapshot_created_at`, `explorer_sha`, `disclaimer`).
 Esempio di `title`: *"Nominativo presente in 5 incarichi su enti diversi – anno 2025"*.
 
 ### 5. Opzioni
-- `--generation-date YYYY-MM-DD`: forza la data di riferimento. Se omessa, viene **derivata
-  deterministicamente** dai dati (anno massimo nei periodi osservati) — mai l'orario di esecuzione.
+- Non ci sono flag di data: `data_through`, `snapshot_created_at` ed `explorer_sha` sono **derivati
+  deterministicamente** dai dati (mai l'orario di esecuzione).
 - Su dati reali dell'Explorer l'esecuzione produce poche piste (es. 7 nell'ultimo test:
-  7 `REGOLA-002`, 0 `REGOLA-001`, 0 `REGOLA-003`); è voluto: le regole sono conservative.
+  3 `REGOLA-002`, 0 `REGOLA-001`, 0 `REGOLA-003`); è voluto: le regole sono conservative.
+- Ogni esecuzione scrive `data/leads/manifest.json`: input attesi, hash, righe, righe usate/scartate,
+  stato e motivo degli scarti. Input obbligatori mancanti/illeggibili → la pipeline fallisce (exit 1).
 
 ---
 
 ## Comportamento importante
-- **Deterministico**: stesso input → stesso output. `generation_date` deriva dai dati, non da `datetime.now()`.
-- **Fail-closed**: se `data/input/` è vuoto o mancano colonne obbligatorie, **non viene emessa
-  alcuna pista** (nessun errore, nessuna inferenza). Nessun dato lascia mai la macchina.
+- **Deterministico**: stesso input → stesso output. `data_through`/`snapshot_created_at`/`explorer_sha` derivano dai dati, non da `datetime.now()`.
+- **Fail-closed sul contenuto, fail-loud sugli input**: un input rotto (file obbligatorio mancante,
+  illeggibile o con colonne mancanti) fa fallire la pipeline e scrive `manifest.json` con stato
+  `failed` (exit 1) — così è distinguibile da un vero risultato pari a zero. Con input validi,
+  soglie non superate → zero piste, nessun errore. Nessun dato lascia mai la macchina.
 
 ## Mappatura Explorer → generatore
 | Tabella Explorer | → colonne generatore |

@@ -34,6 +34,25 @@ def _src(df: pd.DataFrame) -> dict[str, object]:
     }
 
 
+def _ser(df: pd.DataFrame, col: str) -> "pd.Series":
+    """Restituisce la colonna se presente, altrimenti una Series vuota allineata."""
+    if col in df.columns:
+        return df[col].astype(str).str.strip()
+    return pd.Series([""] * len(df), index=df.index)
+
+
+def _src_url(df: pd.DataFrame) -> "pd.Series":
+    return _ser(df, "fonte_url")
+
+
+def _acq(df: pd.DataFrame) -> "pd.Series":
+    return _ser(df, "acquisition_date")
+
+
+def _expl(df: pd.DataFrame) -> "pd.Series":
+    return _ser(df, "note_source")
+
+
 def _ent_id(df: pd.DataFrame) -> "pd.Series":
     # Identificativo stabile dell'ente: codice IPA se presente, altrimenti il nome (object_key)
     if "ipa" in df.columns:
@@ -50,6 +69,8 @@ def adapt_persona(df: pd.DataFrame) -> pd.DataFrame:
     out["year"] = df["period"].astype(str).str[:4]
     out["source_dataset"] = _src(df)["source_dataset"]
     out["source_record_id"] = _src(df)["source_record_id"]
+    out["source_url"] = _src_url(df)
+    out["acquisition_date"] = _acq(df)
     return out
 
 
@@ -61,6 +82,8 @@ def adapt_awards(df: pd.DataFrame) -> pd.DataFrame:
     out["procedure_type"] = "affidamento diretto"
     out["source_dataset"] = _src(df)["source_dataset"]
     out["source_record_id"] = _src(df)["source_record_id"]
+    out["source_url"] = _src_url(df)
+    out["acquisition_date"] = _acq(df)
     return out
 
 
@@ -68,8 +91,11 @@ def adapt_cig(df: pd.DataFrame) -> pd.DataFrame:
     out = pd.DataFrame()
     out["cig"] = df["subject_key"]
     out["subject_id"] = _ent_id(df)
+    out["explanation"] = _expl(df)
     out["source_dataset"] = _src(df)["source_dataset"]
     out["source_record_id"] = _src(df)["source_record_id"]
+    out["source_url"] = _src_url(df)
+    out["acquisition_date"] = _acq(df)
     return out
 
 

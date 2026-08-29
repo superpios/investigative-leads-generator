@@ -5,7 +5,9 @@
 **ID**: {{ id }}
 **Regola**: {{ rule_id }}
 **Periodo**: {{ period }}
-**Data generazione**: {{ generation_date }}
+**Data di copertura (data_through)**: {{ data_through }}
+**Snapshot creato il (snapshot_created_at)**: {{ snapshot_created_at }}
+**SHA Explorer (explorer_sha)**: {{ explorer_sha }}
 
 ## Fatti osservati
 {{ observed_facts }}
