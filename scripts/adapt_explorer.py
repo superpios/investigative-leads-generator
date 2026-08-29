@@ -4,12 +4,12 @@ nel formato di input atteso da scripts/apply_rules.py.
 
 Mappatura documentata e revisionabile (vedi REGOLE_SEGNALAZIONE.md):
   persona_incarico_ente__incarichi_nominativi_shard.csv
-     -> person_name = subject_key, entity_id = object_key, year = period[:4]
+     -> person_name = subject_key, entity_id = IPA (o object_key), year = period[:4]
   awards__affidamenti_diretti.csv
-     -> awardee = subject_key, entity_id = object_key, award_date = period,
+     -> awardee = subject_key, entity_id = IPA (o object_key), award_date = period,
         procedure_type = "affidamento diretto" (il dataset e' gia' filtrato)
   cig_ente__affidamenti_diretti.csv
-     -> cig = subject_key, subject_id = object_key
+     -> cig = subject_key, subject_id = IPA (o object_key)
 
 La provenienza (source_dataset, source_record_id) e' preservata cosi' com'e'.
 """
@@ -34,10 +34,19 @@ def _src(df: pd.DataFrame) -> dict[str, object]:
     }
 
 
+def _ent_id(df: pd.DataFrame) -> "pd.Series":
+    # Identificativo stabile dell'ente: codice IPA se presente, altrimenti il nome (object_key)
+    if "ipa" in df.columns:
+        ipa = df["ipa"].astype(str).str.strip()
+        obj = df["object_key"].astype(str).str.strip()
+        return ipa.where(ipa != "", obj)
+    return df["object_key"].astype(str).str.strip()
+
+
 def adapt_persona(df: pd.DataFrame) -> pd.DataFrame:
     out = pd.DataFrame()
     out["person_name"] = df["subject_key"]
-    out["entity_id"] = df["object_key"]
+    out["entity_id"] = _ent_id(df)
     out["year"] = df["period"].astype(str).str[:4]
     out["source_dataset"] = _src(df)["source_dataset"]
     out["source_record_id"] = _src(df)["source_record_id"]
@@ -47,7 +56,7 @@ def adapt_persona(df: pd.DataFrame) -> pd.DataFrame:
 def adapt_awards(df: pd.DataFrame) -> pd.DataFrame:
     out = pd.DataFrame()
     out["awardee"] = df["subject_key"]
-    out["entity_id"] = df["object_key"]
+    out["entity_id"] = _ent_id(df)
     out["award_date"] = df["period"].astype(str)
     out["procedure_type"] = "affidamento diretto"
     out["source_dataset"] = _src(df)["source_dataset"]
@@ -58,7 +67,7 @@ def adapt_awards(df: pd.DataFrame) -> pd.DataFrame:
 def adapt_cig(df: pd.DataFrame) -> pd.DataFrame:
     out = pd.DataFrame()
     out["cig"] = df["subject_key"]
-    out["subject_id"] = df["object_key"]
+    out["subject_id"] = _ent_id(df)
     out["source_dataset"] = _src(df)["source_dataset"]
     out["source_record_id"] = _src(df)["source_record_id"]
     return out
