@@ -104,3 +104,7 @@ Dettagli e logica in `scripts/adapt_explorer.py` e `docs/REGOLE_SEGNALAZIONE.md`
 
 ## Licenza
 GNU Affero General Public License v3.0
+
+## Roadmap
+- **REGOLA-004** (percentuale di affidamenti diretti su un singolo ente): definita ma **non attiva**. L'attivazione è prevista solo dopo la calibrazione della soglia sui dati reali e la validazione manuale di almeno 20 piste generate.
+- Ogni nuova regola viene abilitata esclusivamente dopo: aggiornamento di `docs/REGOLE_SEGNALAZIONE.md`, test quantitativi contro i falsi positivi e validazione manuale di almeno 20 piste.
