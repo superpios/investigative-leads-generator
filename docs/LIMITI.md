@@ -1,6 +1,6 @@
 # Limiti – Investigative Leads Generator
 
-Documento obbligatorio. Estende i limiti di investigative-explorer-dvns e di LEGAL_AND_ETHICS.md del progetto madre.
+Documento obbligatorio. Estende i limiti di investigative-explorer-dvns.
 
 ## Limiti metodologici (vincolanti)
 1. Una pista è solo un segnale quantitativo. Non è prova di nulla.

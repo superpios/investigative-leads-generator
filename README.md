@@ -5,7 +5,7 @@ Generator di **piste investigative conservative** a partire dalle tabelle di rel
 Ogni pista è un segnale quantitativo che **merita verifica**.
 Nessuna pista dimostra, suggerisce o implica illecito, spreco, frode o responsabilità individuale.
 
-**Progetto collegato** al repository madre [DoveVannoINostriSoldi](https://github.com/Italian-Builders-Org/DoveVannoINostriSoldi) (Fase 5 della ROADMAP).
+Consuma le tabelle di relazione prodotte da [investigative-explorer-dvns](https://github.com/superpios/investigative-explorer-dvns) e produce piste conservative, deterministiche e revisionabili.
 
 ## Cosa fa
 - Prende le tabelle di relazione dell'Explorer e le **adatta** nel formato atteso dal motore (`scripts/adapt_explorer.py`)
@@ -74,8 +74,8 @@ Esempio di `title`: *"Nominativo presente in 5 incarichi su enti diversi – ann
 ### 5. Opzioni
 - `--generation-date YYYY-MM-DD`: forza la data di riferimento. Se omessa, viene **derivata
   deterministicamente** dai dati (anno massimo nei periodi osservati) — mai l'orario di esecuzione.
-- Su dati reali dell'Explorer l'esecuzione produce poche piste (es. 8 nell'ultimo test:
-  1 `REGOLA-001`, 7 `REGOLA-002`, 0 `REGOLA-003`); è voluto: le regole sono conservative.
+- Su dati reali dell'Explorer l'esecuzione produce poche piste (es. 7 nell'ultimo test:
+  7 `REGOLA-002`, 0 `REGOLA-001`, 0 `REGOLA-003`); è voluto: le regole sono conservative.
 
 ---
 
@@ -87,9 +87,9 @@ Esempio di `title`: *"Nominativo presente in 5 incarichi su enti diversi – ann
 ## Mappatura Explorer → generatore
 | Tabella Explorer | → colonne generatore |
 | --- | --- |
-| `persona_incarico_ente__*` | `person_name=subject_key`, `entity_id=object_key`, `year=period[:4]` |
-| `awards__affidamenti_diretti` | `awardee=subject_key`, `entity_id=object_key`, `award_date=period`, `procedure_type="affidamento diretto"` |
-| `cig_ente__affidamenti_diretti` | `cig=subject_key`, `subject_id=object_key` |
+| `persona_incarico_ente__*` | `person_name=subject_key`, `entity_id=IPA (o object_key)`, `year=period[:4]` |
+| `awards__affidamenti_diretti` | `awardee=subject_key`, `entity_id=IPA (o object_key)`, `award_date=period`, `procedure_type="affidamento diretto"` |
+| `cig_ente__affidamenti_diretti` | `cig=subject_key`, `subject_id=IPA (o object_key)` |
 
 La provenienza (`source_dataset`, `source_record_id`, `source_url`) è preservata in ogni pista.
 Dettagli e logica in `scripts/adapt_explorer.py` e `docs/REGOLE_SEGNALAZIONE.md`.

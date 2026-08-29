@@ -4,7 +4,7 @@ apply_rules.py – Motore deterministico di applicazione regole.
 
 Fail-closed. Nessuna inferenza. Solo conteggi esatti.
 
-Allineato a REGOLE_SEGNALAZIONE.md v0.1 e a LEGAL_AND_ETHICS.md.
+Allineato a REGOLE_SEGNALAZIONE.md v0.1.
 
 """
 

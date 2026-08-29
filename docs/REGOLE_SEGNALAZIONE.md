@@ -6,7 +6,7 @@ Ogni regola genera solo una “pista” (lead) che **merita verifica**.
 
 Nessuna regola dimostra, suggerisce o implica illecito, spreco, frode, corruzione o responsabilità individuale.
 
-Queste regole implementano in modo dichiarativo e riproducibile la direzione della Fase 5 della ROADMAP di DoveVannoINostriSoldi.
+Queste regole implementano in modo dichiarativo e riproducibile i principi di segnalazione conservativa descritti in questo documento.
 
 ## Principi vincolanti (non negoziabili)
 
@@ -55,4 +55,4 @@ Nessuna altra regola è abilitata in v0.1. Qualsiasi nuova regola richiede:
 - aggiornamento di docs/LIMITI.md
 
 ## Changelog regole
-- 2026-08-28 – v0.1: prime 4 regole estremamente conservative (allineate a Fase 5 ROADMAP e a LEGAL_AND_ETHICS.md del progetto madre).
+- 2026-08-28 – v0.1: prime 4 regole estremamente conservative.
