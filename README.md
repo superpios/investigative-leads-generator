@@ -22,7 +22,9 @@ Nessuna pista dimostra, suggerisce o implica illecito, spreco, frode o responsab
 ## Avvio rapido
 ```bash
 pip install -r requirements.txt
-# Copia le tabelle relations/ dall'Explorer in data/input/
+# 1) Adatta le tabelle di relazione dell'Explorer nel formato atteso dal generatore
+python scripts/adapt_explorer.py --relations <EXPLORE>/data/relations --output data/input
+# 2) Applica le regole (deterministico, fail-closed)
 python scripts/apply_rules.py --input data/input --output data/leads --rules rules/rules_v0.1.yaml
 ```
 
