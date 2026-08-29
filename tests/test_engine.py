@@ -30,7 +30,7 @@ def test_regola_001_soglia():
         ["MARIO ROSSI", "E4", "2025", "inc", "a4"],
         ["MARIO ROSSI", "E5", "2025", "inc", "a5"],
     ]
-    df = _df(rows, ["person_name", "entity_id", "year"])
+    df = _df(rows, ["person_name", "entity_id", "year", "source_dataset", "source_record_id"])
     leads = apply_regola_001(df, 5, "same_calendar_year")
     assert len(leads) == 1
     assert leads[0]["rule_id"] == "REGOLA-001"
@@ -45,7 +45,7 @@ def test_regola_001_sotto_soglia():
         ["MARIO ROSSI", "E3", "2025", "inc", "a3"],
         ["MARIO ROSSI", "E4", "2025", "inc", "a4"],
     ]
-    df = _df(rows, ["person_name", "entity_id", "year"])
+    df = _df(rows, ["person_name", "entity_id", "year", "source_dataset", "source_record_id"])
     assert apply_regola_001(df, 5, "same_calendar_year") == []
 
 
@@ -93,11 +93,12 @@ def test_determinismo_id_e_data():
         ["MARIO ROSSI", "E4", "2025", "inc", "a4"],
         ["MARIO ROSSI", "E5", "2025", "inc", "a5"],
     ]
-    df = _df(rows, ["person_name", "entity_id", "year"])
+    df = _df(rows, ["person_name", "entity_id", "year", "source_dataset", "source_record_id"])
     a = apply_regola_001(df, 5, "same_calendar_year")
     b = apply_regola_001(df, 5, "same_calendar_year")
     assert json.dumps(a, sort_keys=True) == json.dumps(b, sort_keys=True)
-    assert a[0]["generation_date"] == "2025-01-01"
+    # generation_date e' assegnato da main() (determinismo via _derive_gen_date);
+    # qui testiamo id e determinismo della logica di regola.
     assert a[0]["id"] == stable_id("REGOLA-001", "MARIO ROSSI|2025", "2025")
 
 
