@@ -1,3 +1,5 @@
+> Nota: template illustrativo. Il motore (`scripts/apply_rules.py`) genera il Markdown inline; questo file documenta lo schema obbligatorio definito in `docs/FORMATO_PISTA.md`.
+
 # {{ title }}
 
 **ID**: {{ id }}

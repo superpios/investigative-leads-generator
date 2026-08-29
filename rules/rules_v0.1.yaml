@@ -27,7 +27,7 @@ rules:
     condition: "same_cig_or_cup linked to >= threshold distinct subjects without explicit explanation in source"
     threshold: 2
     period: "full_dataset_coverage"
-    required_fields: ["cig_or_cup", "subject_id"]
+    required_fields: ["cig", "cup", "subject_id"]   # il motore richiede almeno uno tra cig/cup e un subject_id (vedi scripts/apply_rules.py)
     note: "Questo non dimostra alcun illecito. Indica solo una concentrazione che merita verifica."
 
   - id: REGOLA-004

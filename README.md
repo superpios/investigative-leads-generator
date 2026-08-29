@@ -8,7 +8,7 @@ Nessuna pista dimostra, suggerisce o implica illecito, spreco, frode o responsab
 **Progetto collegato** al repository madre [DoveVannoINostriSoldi](https://github.com/Italian-Builders-Org/DoveVannoINostriSoldi) (Fase 5 della ROADMAP).
 
 ## Cosa fa
-- Legge le tabelle di relazione (formato definito in `schemas/` dell'Explorer)
+- Legge le tabelle di relazione (CSV) esportate da `investigative-explorer-dvns` (in `data/relations/` dell'Explorer); lo schema di ogni pista in uscita è in `docs/FORMATO_PISTA.md`
 - Applica regole dichiarative estremamente caute (YAML)
 - Produce piste in JSON + Markdown con provenienza completa
 - È completamente deterministico (stesso input → stesso output)
@@ -31,6 +31,10 @@ python scripts/apply_rules.py --input data/input --output data/leads --rules rul
 | docs/REGOLE_SEGNALAZIONE.md | Regole attive + principi vincolanti |
 | docs/FORMATO_PISTA.md | Schema obbligatorio di ogni pista |
 | docs/LIMITI.md | Limiti metodologici e interpretativi |
+
+## Note di implementazione
+- **Determinismo**: `generation_date` è derivato dai dati (anno massimo nei periodi osservati), non dall'orario di esecuzione. Stesso input → stesso output, in conformità al principio 6 di `docs/REGOLE_SEGNALAZIONE.md`.
+- **Fail-closed**: in assenza di file o di campi obbligatori non viene emessa alcuna pista (nessun errore, nessuna inferenza).
 
 ## Licenza
 GNU Affero General Public License v3.0
