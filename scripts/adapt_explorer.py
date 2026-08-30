@@ -42,6 +42,11 @@ def _ser(df: pd.DataFrame, col: str) -> "pd.Series":
 
 
 def _src_url(df: pd.DataFrame) -> "pd.Series":
+    # Explorer non è uniforme: alcuni dataset usano "source_url",
+    # altri (incarichi) usano "fonte_url". Proviamo prima il nome corretto
+    # per ciascun dataset e poi il fallback, senza mai fallire silenziosamente su entrambi.
+    if "source_url" in df.columns:
+        return _ser(df, "source_url")
     return _ser(df, "fonte_url")
 
 
